@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <StaticWebAssetBasePath>/</StaticWebAssetBasePath>
+        <PackageTags>umbraco plugin package validation</PackageTags>
+        <Description>Extends the default ASP.NET validation attributes with support for a translation dictionary.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Authors>Sebastian Müller</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>1.0.1</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>Sitepoint.UmbValidationAttributes</PackageId>
+        <Product>UmbValidationAttributes</Product>
+        <Title>UmbValidationAttributes</Title>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.3.0" />
+      <PackageReference Include="Microsoft.Extensions.Localization" Version="9.0.1" />
+      <PackageReference Include="Umbraco.Cms.Core" Version="15.1.2" />
+      <PackageReference Include="Umbraco.Cms.Web.Common" Version="15.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- Dont include the client folder as part of packaging nuget build -->
+        <Content Remove="Client\**"/>
+
+        <!-- However make the Umbraco-package.json included for dotnet pack or nuget package and visible to the solution -->
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Client\package.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>
