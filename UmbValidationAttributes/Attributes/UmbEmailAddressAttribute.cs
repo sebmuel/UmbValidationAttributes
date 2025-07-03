@@ -7,7 +7,7 @@ public class UmbEmailAddressAttribute : RegularExpressionAttribute, IUmbAttribut
 {
     public string DictionaryKey { get; }
     public string FallbackMessage { get; }
-    private new const string Pattern = @"^([\w\.\-]+)@([\w\-]+)(\.[\w\-]+)+((\.(\w){2,})+)$";
+    private new const string Pattern = @"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$";
 
     public UmbEmailAddressAttribute(string dictionaryKey, string fallbackMessage, string? pattern = null)
         : base(pattern ?? Pattern)
