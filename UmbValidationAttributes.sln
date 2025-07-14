@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationAttributes.Umbrac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbValidationAttributes", "UmbValidationAttributes\UmbValidationAttributes.csproj", "{605B6E86-F90E-455E-AA62-9E558A92F204}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6DE0A730-3D10-4B3D-84F9-18AF490D95C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{4135B5F3-F075-41A4-8965-9B1005C8545C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{76A0FF51-77A8-4398-A8C7-82B7A4B58A55} = {579908F1-394A-4266-B88E-482646CB5D97}
 		{605B6E86-F90E-455E-AA62-9E558A92F204} = {579908F1-394A-4266-B88E-482646CB5D97}
+		{4135B5F3-F075-41A4-8965-9B1005C8545C} = {6DE0A730-3D10-4B3D-84F9-18AF490D95C2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{76A0FF51-77A8-4398-A8C7-82B7A4B58A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 		{605B6E86-F90E-455E-AA62-9E558A92F204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{605B6E86-F90E-455E-AA62-9E558A92F204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{605B6E86-F90E-455E-AA62-9E558A92F204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4135B5F3-F075-41A4-8965-9B1005C8545C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4135B5F3-F075-41A4-8965-9B1005C8545C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4135B5F3-F075-41A4-8965-9B1005C8545C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4135B5F3-F075-41A4-8965-9B1005C8545C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
